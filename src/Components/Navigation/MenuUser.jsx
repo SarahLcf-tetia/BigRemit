@@ -2,12 +2,13 @@ const MenuUser = () => {
 
     return(
         <div className="menu">
+            <input text="button" name="sendMoney" value="Send Money"/><br/><br/>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/">Account</a></li>
-                <li><a href="/">Recipients</a></li>
-                <li><a href="/">Manage</a></li>
-                <li><a href="/">Sponsor</a></li>
+                <li><a href="/user">Home</a></li>
+                <li><a href="/account">Account</a></li>
+                <li><a href="/recipients">Recipients</a></li>
+                <li><a href="/manage">Manage</a></li>
+                <li><a href="/sponsor">Sponsor</a></li>
             </ul>
         </div>
     )

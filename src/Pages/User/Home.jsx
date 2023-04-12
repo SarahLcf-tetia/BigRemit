@@ -4,30 +4,29 @@ const Home = () => {
     return(
         <div>
             <h1>Home</h1>
-            <input text="button" name="sendMoney" value="Send Money"/><br/><br/>
             <MenuUser/><br/><br/>
 
             <h4>Account</h4>
             <div>
                 <div>
-                    <p>0.00€</p>
-                    <p>EUR</p>
+                    <span>0.00€</span>
+                    <span>EUR</span>
                 </div>
                 <div>
-                    <p>0.00€</p>
-                    <p>EUR</p>
+                    <span>0.00€</span>
+                    <span>EUR</span>
                 </div>
             </div>
 
             <h4>Categorie</h4>
             <div>
                 <div>
-                    <p>Titre</p><br/>
-                    <p>Nemo quaeso miretur, si post exsudatos </p>
+                    <span>Titre</span><br/>
+                    <span>Nemo quaeso miretur, si post exsudatos </span>
                 </div>
                 <div>
-                    <p>Titre</p><br/>
-                    <p>Nemo quaeso miretur, si post exsudatos </p>
+                    <span>Titre</span><br/>
+                    <span>Nemo quaeso miretur, si post exsudatos </span>
                 </div>
             </div>
 
