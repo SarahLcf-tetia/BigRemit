@@ -1,14 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+
+import Home from './Pages/Home/Home';
+import Login from './Pages/User/LoginPage';
+import Register from './Pages/User/RegisterPage';
+import HomeUser from './Pages/User/Home';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <BrowserRouter>
+        <Routes>
+            <Route path='/' element={<Home/>}/>
+            <Route path='/login' element={<Login/>}/>
+            <Route path='/register' element={<Register/>}/>
+            <Route path='/user' element={<HomeUser/>}/>
+        </Routes>
+    </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
