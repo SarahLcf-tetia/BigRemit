@@ -36,7 +36,7 @@ jobs:
         env:
           CI: true
           SITE_URL: ${{ inputs.site-url }}
-        run: node index.js
+        run: npm install
 
 # Please do not touch the following action
       - name: Store deployment content
@@ -44,7 +44,7 @@ jobs:
         with:
           api-key: ${{ secrets.IONOS_API_KEY }}
           service-host: api-eu.ionos.space
-          project-id: e404f34d-913d-4b99-8753-0bf4689eddab
+          project-id: 8bf54777-4c2d-4861-a439-da871cc3d701
           branch-id: ${{ inputs.branch-id }}
           version: ${{ github.sha }}
           folder: ${{ env.DEPLOYMENT_FOLDER }}
