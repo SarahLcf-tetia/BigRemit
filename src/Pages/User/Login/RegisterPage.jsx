@@ -1,5 +1,10 @@
-import Register from '../../Components/Form/Register'
+import Register from '../../../Components/Form/Register'
 const RegisterPage = () => {
+
+    /*
+        BACK END
+        - POST User
+     */
 
     const handleBackFromRegister = () => {
         window.location.href = '/'

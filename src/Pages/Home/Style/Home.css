@@ -1,0 +1,48 @@
+.image_iphone_home{
+    width: 550px;
+    height: 680px;
+}
+
+.part_left_home{
+    display: inline-block;
+    width: 50%;
+    position: relative;
+    vertical-align : top;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+.part_right_home{
+    display: inline-block;
+}
+
+.title_H1_home{
+    font-family: Ubuntu;
+    font-size: 45px;
+    color: #384454;
+}
+
+.title_H3_home{
+    font-family: Ubuntu;
+    font-size: 20px;
+    color: #384454;
+}
+
+.smallParts{
+    margin-top: 50px;
+}
+
+.smallPart_left{
+    display: inline-block;
+    font-size: 15px;
+    color: #384454;
+    font-family: Ubuntu;
+}
+
+.smallPart_right{
+    margin-left: 100px;
+    display: inline-block;
+    font-size: 15px;
+    color: #384454;
+    font-family: Ubuntu;
+}

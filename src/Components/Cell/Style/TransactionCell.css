@@ -1,0 +1,43 @@
+.transactionCell{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.cell_id{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 6px #CBA971;
+    position: relative;
+    display: inline-block;
+}
+
+.text_id{
+    font-size: 20px;
+    font-weight: 500;
+    color: #CBA971;
+    font-family: Ubuntu;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.group_textTransaction{
+    display: inline-block;
+    margin-left: 50px;
+    transform: translateY(-25%);
+}
+
+.title_transaction{
+    font-size: 20px;
+    font-weight: 500;
+    color: #CBA971;
+    font-family: Ubuntu;
+}
+
+.text_transaction{
+    font-size: 15px;
+    font-weight: 200;
+    font-family: Ubuntu;
+    color: #ACACAF;
+}

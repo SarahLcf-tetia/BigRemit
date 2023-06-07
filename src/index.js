@@ -4,8 +4,8 @@ import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 import Home from './Pages/Home/Home';
-import Login from './Pages/User/LoginPage';
-import Register from './Pages/User/RegisterPage';
+import Login from './Pages/User/Login/LoginPage';
+import Register from './Pages/User/Login/RegisterPage';
 import HomeUser from './Pages/User/Home';
 import Manage from './Pages/User/Manage';
 import Sponsor from './Pages/User/Sponsor';
@@ -13,6 +13,7 @@ import Recipients from "./Pages/User/Recipients";
 import Setting from "./Pages/User/Setting";
 import DetailsUser from "./Pages/User/DetailsUser";
 import Account from "./Pages/User/Account";
+import SendMoney from "./Pages/SendMoney/SendMoney";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -28,6 +29,7 @@ root.render(
             <Route path='/setting' element={<Setting/>}/>
             <Route path='/detailsUser' element={<DetailsUser/>}/>
             <Route path='/account' element={<Account/>}/>
+            <Route path='/sendMoney' element={<SendMoney/>}/>
         </Routes>
     </BrowserRouter>
 );

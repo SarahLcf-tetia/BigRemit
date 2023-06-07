@@ -1,53 +1,39 @@
 import MenuUser from '../../Components/Navigation/MenuUser.jsx'
+import SectionCell from "../../Components/Cell/SectionCell";
+import Divider from "../../Components/Divider/Divider";
+import MenuTopUser from "../../Components/Navigation/MenuTopUser";
 const Manage = () => {
+    /*
+        BACK END
+        - ...
+     */
     return(
         <div className="manage">
-            <h1>Manage</h1>
             <MenuUser/>
-            <div>
-                <h4>Categorie</h4><br/>
+            <MenuTopUser/>
+            <div className="border_page">
+                <h2 className="title_h2">Manage your account</h2>
                 <div>
-                    <span>Sponsor</span><br/>
-                    <span>Nemo quaeso miretur, si post exsudatos </span><br/>
-                </div><br/>
-            </div><br/>
-            <div>
-                <h4>Categorie</h4><br/>
-                <div>
-                    <span>Account sponsor</span><br/>
-                    <span>Nemo quaeso miretur, si post exsudatos </span><br/>
+                    <h4 className="title_h4">Balances</h4>
+                    <Divider/>
+                    <SectionCell title="Account sponsor"/>
+                    <SectionCell title="Auto Conversions"/>
                 </div><br/>
                 <div>
-                    <span>Auto Conversions</span><br/>
-                    <span>Nemo quaeso miretur, si post exsudatos </span><br/>
-                </div><br/>
-            </div><br/>
-            <div>
-                <h4>Categorie</h4><br/>
-                <div>
-                    <span>Direct debits</span><br/>
-                    <span>Nemo quaeso miretur, si post exsudatos </span><br/>
+                    <h4 className="title_h4">Payments</h4>
+                    <Divider/>
+                    <SectionCell title="Direct debits"/>
+                    <SectionCell title="Scheduled transfers"/>
+                    <SectionCell title="Payment requests"/>
+                    <SectionCell title="Receving Money without bank details"/>
                 </div><br/>
                 <div>
-                    <span>Scheduled transfers</span><br/>
-                    <span>Nemo quaeso miretur, si post exsudatos </span><br/>
+                    <h4 className="title_h4">Statements</h4>
+                    <Divider/>
+                    <SectionCell title="Statements and reports"/>
                 </div><br/>
-                <div>
-                    <span>Payment requests</span><br/>
-                    <span>Nemo quaeso miretur, si post exsudatos </span><br/>
-                </div><br/>
-                <div>
-                    <span>Receving Money without bank details</span><br/>
-                    <span>Nemo quaeso miretur, si post exsudatos </span><br/>
-                </div><br/>
-            </div><br/>
-            <div>
-                <h4>Categorie</h4><br/>
-                <div>
-                    <span>Statements and reports</span><br/>
-                    <span>Nemo quaeso miretur, si post exsudatos </span><br/>
-                </div><br/>
-            </div><br/>
+            </div>
+
 
         </div>
     )

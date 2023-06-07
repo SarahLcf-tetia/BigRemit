@@ -1,37 +1,34 @@
 import MenuUser from '../../Components/Navigation/MenuUser.jsx'
+import WalletCell from "../../Components/Cell/WalletCell";
+import Divider from "../../Components/Divider/Divider";
+import TransactionCell from "../../Components/Cell/TransactionCell";
+import "./Style/Style.css"
+import MenuTopUser from "../../Components/Navigation/MenuTopUser";
 const Home = () => {
+
+    /*
+        BACK END
+        - ...
+
+     */
 
     return(
         <div>
-            <h1>Home</h1>
-            <MenuUser/><br/><br/>
-
-            <h4>Account</h4>
-            <div>
+            <MenuUser/>
+            <MenuTopUser/>
+            <div className="border_page">
+                <h4 className="title_h4">Account</h4>
+                <Divider/>
+                <WalletCell/>
+                <h4 className="title_h4">Transactions</h4>
+                <Divider/>
                 <div>
-                    <span>0.00€</span>
-                    <span>EUR</span>
+                    <TransactionCell/>
+                    <TransactionCell/>
                 </div>
-                <div>
-                    <span>0.00€</span>
-                    <span>EUR</span>
-                </div>
+                <h4 className="title_h4">Categorie</h4>
+                <Divider/>
             </div>
-
-            <h4>Categorie</h4>
-            <div>
-                <div>
-                    <span>Titre</span><br/>
-                    <span>Nemo quaeso miretur, si post exsudatos </span>
-                </div>
-                <div>
-                    <span>Titre</span><br/>
-                    <span>Nemo quaeso miretur, si post exsudatos </span>
-                </div>
-            </div>
-
-            <h4>Categorie</h4>
-
         </div>
     )
 }

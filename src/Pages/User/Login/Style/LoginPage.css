@@ -1,0 +1,87 @@
+html, body {
+    margin: -5px 0px;
+    height: 100%;
+}
+#root{
+    margin: 0px;
+    height: 100%;
+}
+
+.body_login{
+    height:101%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.field{
+    border: 2px solid #CDA969;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    box-shadow: 3px 3px 5px #cda969;
+    font-family: Ubuntu;
+    font-style: italic;
+    width: 300px;
+    height: 30px;
+}
+
+.text_forgotPassword{
+    font-weight: bold;
+    color: #CDA969;
+    display: inline-block;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.button_submit_login{
+    display: inline-block;
+}
+
+.text_register{
+    font-weight: bold;
+    color: #CDA969;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.text_TermsAndPrivacy{
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 10px;
+    color: #666666;
+}
+
+.part_register{
+    text-align: center;
+}
+
+.part_login{
+    text-align: center;
+}
+
+.section_loginAndRegister{
+    width: 50%;
+    height: 500px;
+}
+.button_switch{
+    font-size: 25px;
+    font-weight: Bold;
+    color: #ACACAF;
+    background: none;
+    border-bottom: 3px solid #ACACAF;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    margin: 10px;
+    padding: 15px;
+}
+
+#active{
+    color: #CDA969;
+    border-bottom: 3px solid #CDA969;
+}
+
+.switcher{
+    text-align: center;
+    margin-bottom: 20px;
+}
