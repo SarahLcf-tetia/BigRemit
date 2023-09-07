@@ -38,6 +38,7 @@ const SendMoney = () => {
             <MenuTopUser/>
             <Button text="Back" link="/user"/><br/><br/>
             <div className="section_a">
+                <input type="date" name="dateScheduled"/>
                 <div>
                     <input type="text" placeholder="1069,59"/>
                     <select name="currency_start" id="currency_start">

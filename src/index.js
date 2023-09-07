@@ -14,6 +14,10 @@ import Setting from "./Pages/User/Setting";
 import DetailsUser from "./Pages/User/DetailsUser";
 import Account from "./Pages/User/Account";
 import SendMoney from "./Pages/SendMoney/SendMoney";
+import SendMoneyScheduled from "./Pages/SendMoney/SendMoneyScheduled";
+import RequestMoney from "./Pages/SendMoney/RequestMoney";
+import AutoConversion from "./Pages/SendMoney/AutoConversion";
+import TransactionMoney from "./Pages/SendMoney/TransactionMoney";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -30,11 +34,12 @@ root.render(
             <Route path='/detailsUser' element={<DetailsUser/>}/>
             <Route path='/account' element={<Account/>}/>
             <Route path='/sendMoney' element={<SendMoney/>}/>
+            <Route path='/sendMoneyScheduled' element={<SendMoneyScheduled/>}/>
+            <Route path='/requestMoney' element={<RequestMoney/>}/>
+            <Route path='/autoConversion' element={<AutoConversion/>}/>
+            <Route path='/transactionMoney' element={<TransactionMoney/>}/>
         </Routes>
     </BrowserRouter>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

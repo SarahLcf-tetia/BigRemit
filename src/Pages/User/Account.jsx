@@ -2,6 +2,7 @@ import MenuUser from "../../Components/Navigation/MenuUser";
 import Divider from "../../Components/Divider/Divider";
 import Button from "../../Components/Button/Button";
 import MenuTopUser from "../../Components/Navigation/MenuTopUser";
+import IconUser from "../../Components/Pictures/icon_user.png";
 
 const Account = () => {
     /*
@@ -20,7 +21,7 @@ const Account = () => {
                 <h4 className="title_h4">Your account</h4>
                 <div className="section_imageAccount">
                     <div className="image_user">
-                        <img src={""} alt={""}/>
+                        <img className="image_profile" src={IconUser} alt={""}/>
                     </div>
 
                     <span>Add your account photo</span>

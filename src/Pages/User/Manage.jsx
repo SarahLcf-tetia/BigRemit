@@ -16,16 +16,16 @@ const Manage = () => {
                 <div>
                     <h4 className="title_h4">Balances</h4>
                     <Divider/>
-                    <SectionCell title="Account sponsor"/>
-                    <SectionCell title="Auto Conversions"/>
+                    <SectionCell title="Account sponsor" link="/sponsor"/>
+                    <SectionCell title="Auto Conversions" link="/autoConversion"/>
                 </div><br/>
                 <div>
                     <h4 className="title_h4">Payments</h4>
                     <Divider/>
-                    <SectionCell title="Direct debits"/>
-                    <SectionCell title="Scheduled transfers"/>
-                    <SectionCell title="Payment requests"/>
-                    <SectionCell title="Receving Money without bank details"/>
+                    <SectionCell title="Direct debits" link="/sendMoney"/>
+                    <SectionCell title="Scheduled transfers" link="sendMoneyScheduled"/>
+                    <SectionCell title="Payment requests" link="/requestMoney" />
+                    <SectionCell title="Receving Money without bank details" link="/transactionMoney"/>
                 </div><br/>
                 <div>
                     <h4 className="title_h4">Statements</h4>

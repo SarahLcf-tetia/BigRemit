@@ -1,11 +1,10 @@
+import MenuTopUser from "../../Components/Navigation/MenuTopUser";
 import Button from "../../Components/Button/Button";
-import Divider from "../../Components/Divider/Divider";
 import SectionCell from "../../Components/Cell/SectionCell";
 import Modal from "react-modal";
 import {useState} from "react";
-import MenuTopUser from "../../Components/Navigation/MenuTopUser";
 
-const SendMoney = () => {
+const RequestMoney = () => {
 
     const [showModal, setShowModal] = useState(false);
 
@@ -17,7 +16,6 @@ const SendMoney = () => {
     const handleShowModal = () => {
         setShowModal(true);
     };
-
     const handleNext = (oldSection, newSection) => {
         document.getElementsByClassName(oldSection)[0].style.display = "none";
         document.getElementsByClassName(newSection)[0].style.display = "block";
@@ -27,11 +25,6 @@ const SendMoney = () => {
         document.getElementsByClassName(oldSection)[0].style.display = "none";
         document.getElementsByClassName(newSection)[0].style.display = "block";
     }
-
-    /*
-        BACK END
-        - POST SendMoney
-     */
 
     return (
         <div>
@@ -64,10 +57,8 @@ const SendMoney = () => {
                     handleNext("section_a", "section_b")}/>
             </div>
             <div className="section_b" style={{display: "none"}}>
-               <h4 className="title_h4">Who’s your new contact ?</h4>
-                <SectionCell title="Myself"/>
-                <SectionCell title="Someone else"/>
-                <SectionCell title="Business"/>
+                <h4 className="title_h4">Who’s your contact ?</h4>
+                <input type="text" placeholder="Name"/><br/>
                 <input type="button" name="Next" value="Next" className="button_submit_login styled" onClick={() =>
                     handleNext("section_b", "section_c")}/>
             </div>
@@ -101,7 +92,7 @@ const SendMoney = () => {
                 </Modal>
             </div>
         </div>
-    )
+    );
 }
 
-export default SendMoney
+export default RequestMoney;

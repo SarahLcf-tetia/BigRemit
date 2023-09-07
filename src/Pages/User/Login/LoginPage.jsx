@@ -2,6 +2,7 @@ import './Style/LoginPage.css'
 import Background from '../../../Components/Pictures/background_user_1.png'
 import Menu from '../../../Components/Navigation/Menu'
 import Spacer from '../../../Components/Navigation/Spacer'
+import Register from "../../../Components/Form/Register";
 
 const LoginPage = () => {
 
@@ -53,11 +54,7 @@ const LoginPage = () => {
                 </div>
                 <div className="part_register" id="part_register"  style={{display: "none"}}>
                     <form>
-                        <p className="text_register">Please enter your email address : </p>
-                        <input className="field" type="text" name="email_register" placeholder="Email"/><br/>
-                        <span className="text_TermsAndPrivacy">By registering, you accept our Terms of use and Privacy Policy</span><br/>
-                        <input type="submit" name="Next" value="Next" className="button_submit_login styled"/><br/>
-                        <p className="text_register">Already have an account ? Log in at !</p>
+                        <Register/>
                     </form>
                 </div>
             </div>
